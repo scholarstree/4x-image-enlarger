@@ -4,7 +4,7 @@ Enlarge any image by 4x.
 <img src="./images/win_1.png" width="500" />
 
 ## Steps for Running Executables
-1. For Windows, simply download and run 4xImageEnlarger.exe
+1. For Windows, simply download and run [4xImageEnlarger.exe](https://github.com/scholarstree/4x-image-enlarger/releases/tag/exe) from releases.
 2. For Linux and macOS, run using command line instead.
 
 ## Installation 
