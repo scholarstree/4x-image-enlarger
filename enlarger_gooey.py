@@ -379,10 +379,10 @@ def enlarge(args):
     # try:
     #     subprocess.check_output('nvidia-smi')
     #     print('Nvidia GPU detected! Using GPU for inference.')
-    #     sess = rt.InferenceSession("model-4x.onnx", None, providers=["CUDAExecutionProvider"])
+    #     sess = rt.InferenceSession("./models/model-4x.onnx", None, providers=["CUDAExecutionProvider"])
     # except Exception:
     #     print('No Nvidia GPU in system. Using CPU for inference.')
-    #     sess = rt.InferenceSession(resource_path('model-4x.onnx'), None, providers=["CPUExecutionProvider"])
+    #     sess = rt.InferenceSession(resource_path('./models/model-4x.onnx'), None, providers=["CPUExecutionProvider"])
 
      ###################################################################################
     end_model = time.time()

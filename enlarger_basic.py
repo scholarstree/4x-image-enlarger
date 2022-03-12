@@ -28,6 +28,20 @@ img_old = np.concatenate([img_old, np.flip(np.copy(img_old), [3])], 3)[:, :, :, 
 ####################################### Load ONNX Model ########################################
 print("Loading model...")
 sess = rt.InferenceSession("./models/model-4x.onnx")
+
+################################## GPU Inference ##################################
+
+# ONNX GPU inference depends on CUDA version. Hence, not used for executable program.
+
+# try:
+#     subprocess.check_output('nvidia-smi')
+#     print('Nvidia GPU detected! Using GPU for inference.')
+#     sess = rt.InferenceSession("./models/model-4x.onnx", None, providers=["CUDAExecutionProvider"])
+# except Exception:
+#     print('No Nvidia GPU in system. Using CPU for inference.')
+#     sess = rt.InferenceSession(resource_path('./models/model-4x.onnx'), None, providers=["CPUExecutionProvider"])
+
+###################################################################################
 input_name = sess.get_inputs()[0].name
 label_name = sess.get_outputs()[0].name
 
