@@ -7,6 +7,12 @@ Enlarge any image by 4x.
 1. For Windows, simply download and run [4xImageEnlarger.exe](https://github.com/scholarstree/4x-image-enlarger/releases/tag/exe) from releases.
 2. For Linux and macOS, run using command line instead.
 
+## Requirements
+* Python < 3.7
+* Gooey 1.2.0a0 (requries Python < 3.7>)
+* Onnxruntime
+* pyinstaller 4.10
+
 ## Installation 
 Clone 4x-image-enlarger git repository and enter the directory.
 
